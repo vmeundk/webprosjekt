@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Hytteutleie</title>
+<link rel="stylesheet" href="prosjektindex.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <body>
+<img class="img-responsive" src="bilder/header1.jpg" alt="HEADER" width="1300px">
+
+<form>
+
+<ul>
+  <li><a class="active" href="prosjektindex.html">Hjem</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Hytter</a>
+    <div class="dropdown-content">
+      <a href="hyttesjo.html">Hytter ved sjøen</a>
+      <a href="hyttefjell.html">Hytter i fjellet</a>
+      <a href="hytteskog.html">Hytter i skog og mark</a>
+    </div>
+  <li><a href="kontakt.html">Kontakt</a></li>
+  <li><a href="bestilling.html">Bestilling</a></li>
+  <li style="float:right"><a href="omoss.html">Om oss</a></li>
+  <input type="text" name="search" placeholder="Søk på siden.."></i>
+</form>
+</ul>
+<div class="altunder">
+
+<h1>Bestill hytteopphold</h1>
+<p>Skriv inn informasjon blablablabla</p>
+
+<div id="skjema">
+  <form action="action_page.php">
+    <label for="fname">Fornavn</label>
+    <input type="text" id="fname" name="firstname">
+<br>
+    <label for="lname">Etternavn</label>
+    <input type="text" id="lname" name="lastname">
+<br>
+    <label for="epost">E-post</label>
+      <input type="text" id="epost" name="e-post">
+      <br>
+      <label for="tlf">Telefonnummer</label>
+        <input type="text" id="tlf" name="telefon">
+</select>
+
+
+<p> Hvor mange skal overnatte?</p>
+      <select name="antall">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+<br></br>
+
+      <form action="action_page.php">
+        Velg reiselengde:
+        <br></br>
+        <label for="ankomst">Ankomst:</label>
+        <input type="date" name="ankomst" min="2017-01-01" max="2020-01-01">
+        <label for="avreise">Avreise:</label>
+        <input type="date" name="avreise" min="2017-01-01" max="2020-01-01">
+
+
+<br></br>
+    <input type="radio" name="medvask" value="mvask" checked>Vi ønsker at hytten skal vaskes.<br>
+  <input type="radio" name="utenvask" value="uvask"> Vi ønsker ikke hyttevask.
+  <p>Pris for hyttevask...</p>
+<br>
+      <textarea>Eventuelle kommentarer...</textarea>
+
+    <input type="submit" value="Send inn">
+
+  </form>
+</div>
+
+
+</div>
+<footer>Copyright © HytterForLife
+  <p>Har du spørsmål? Send epost<a href="mailto:regine_bk@example.com">Regine.</a>.<br></p>
+  </footer>
+
+
+</body>
+</html>

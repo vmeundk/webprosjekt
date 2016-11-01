@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Hytteutleie</title>
+<link rel="stylesheet" href="prosjektindex.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+  <body>
+<img class="img-responsive" src="bilder/header1.jpg" alt="HEADER" width="1300px">
+
+<form>
+
+<ul>
+  <li><a class="active" href="prosjektindex.html">Hjem</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Hytter</a>
+    <div class="dropdown-content">
+      <a href="hyttesjo.html">Hytter ved sjøen</a>
+      <a href="hyttefjell.html">Hytter i fjellet</a>
+      <a href="hytteskog.html">Hytter i skog og mark</a>
+    </div>
+  <li><a href="kontakt.html">Kontakt</a></li>
+  <li><a href="bestilling.html">Bestilling</a></li>
+  <li style="float:right"><a href="omoss.html">Om oss</a></li>
+  <input type="text" name="search" placeholder="Søk på siden.."></i>
+</form>
+</ul>
+<div class="altunder">
+
+<h1>Drømmehytt1</h1>
+<h2>Finn ditt hytteparadis!</h2>
+<p> Her kommer all teksten som skal vise frem hvor flinke dette hytteutleieselskapet er. Med noen eksempelbilder av de flotteste hyttene.</p>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bilder/sjo1.jpeg" style="width:100%">
+  <div class="text">Hytte ved sjøen</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bilder/fjell2.jpeg" style="width:100%">
+  <div class="text">Hytte på fjellet</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bilder/skog1.jpg" style="width:100%">
+  <div class="text">Hytte i skogen</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+
+</div>
+<footer>Copyright © HytterForLife
+  <p>Har du spørsmål? Send epost<a href="mailto:regine_bk@example.com">Regine.</a>.<br></p>
+  </footer>
+</body>
+</html>
